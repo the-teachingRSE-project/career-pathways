@@ -4,6 +4,9 @@
 
 ## Introduction
 
+## Method
+Action Research
+
 ## Current State
 
 ## Non-academic viewpoints
