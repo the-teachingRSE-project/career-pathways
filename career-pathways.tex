@@ -1,0 +1,85 @@
+\documentclass{eceasst}
+% This is the source of the author documentation
+% for the ECEASST document class.
+
+% Required packages
+% =================
+\usepackage{subfig}
+
+\usepackage{orcidlink}
+\usepackage{accsupp}
+
+%Mathematical formula accessibility and machine-readability: if you add
+\usepackage[accsupp]{axessibility}
+\pdfcompresslevel=1
+%in the article preamble, you can select an equation and copy-paste it to a text file to recover the TeX math
+
+
+% PDF accessibility and PDF metadata
+\newcommand{\authorRef}[1]{\texorpdfstring{\autref{#1}}{}}
+\newcommand{\authorOrcid}[1]{\texorpdfstring{\thinspace\orcidlink{#1}\thinspace}{}}
+\newcommand{\geprislink}[1]{\href{https://gepris.dfg.de/gepris/projekt/#1?language=en}{#1}}
+
+\newcommand{\Eg}{E.\,g.}
+\newcommand{\eg}{e.\,g.}
+
+
+\definecolor{easstblue}{rgb}{.05,.32,.66}
+
+
+
+\title{Developing the role and career pathways of RSEs in Germany: Current perspectives and future aims }
+\short{Career pathways for RSEs}
+
+\author{
+Florian Goth\authorOrcid{0000-0003-2707-4790}\authorRef{2},
+Frank Löffler\authorOrcid{0000-0001-6643-6323}\authorRef{3},
+} % Authors and references to addresses
+\institute{% Institutes with labels
+\autlabel{2} Institut für theoretische Physik 1, University of Würzburg, 97074, Würzburg,\\
+\autlabel{3} Heinz Nixdorf Chair for Distributed Information Systems, Jena, Germany\\
+\autlabel{4} Another Place\\
+}
+
+\abstract{% Abstract of the article
+abstract
+}
+\keywords{INF, CRCs, DFG}
+
+
+
+% PDF/A compliance
+% ========================
+% This is an optional step to help with archiving and long-term preservation
+% of electronic documents. It stores XMP metadata, machine-readable content,
+% and color profiles in the PDF file. When used, it must appear last in the
+% preamble to avoid conflicts with other packages (the pdfx package loads
+% hyperref and xcolor).
+
+\usepackage[a-3u]{pdfx}
+\begin{filecontents}[overwrite]{\jobname.xmpdata}
+\Author{Florian Goth \sep Frank Löffler}
+\Title{Developing the role and career pathways of RSEs in Germany: Current perspectives and future aims }
+\Language{English}
+\Subject{Software Science and Technology}
+\end{filecontents}
+
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+
+\section{Summary}
+I would like to end this on something that binds the INF projects together irrespective of the domain they are in.
+Any other ideas for a summary?
+
+\begin{acknowledge}
+We acknowledge the hospitality of the university of Stuttgart for hosting this workshop.
+FG acknowledges funding from the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) through the SFB 1170 “Tocotronics”, project Z03 - project number \geprislink{258499086}.
+\end{acknowledge}
+
+\bibliographystyle{eceasst}
+\bibliography{career-pathwys}
+
+\end{document}
