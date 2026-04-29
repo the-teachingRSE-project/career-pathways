@@ -1,0 +1,24 @@
+main = "career-pathways"
+texlive_version = 2026
+
+[tools]
+tex = "pdflatex"
+bib = "bibtex"
+lint = "chktex"
+format = "texfmt"
+spellcheck = "codespell"
+custom_toolchain = "T"
+
+[dependencies]
+accsupp = "texlive"
+axessibility = "texlive"
+caption = "texlive"
+colorprofiles = "texlive"
+everyshi = "texlive"
+hypcap = "texlive"
+orcidlink = "texlive"
+pdfx = "texlive"
+pgf = "texlive"
+rsfs = "texlive"
+xmpincl = "texlive"
+xstring = "texlive"
