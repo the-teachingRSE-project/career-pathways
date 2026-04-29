@@ -47,7 +47,7 @@ jobs:
           frisket instantiate
 
       - name: build pdf
-        run: frisket build
+        run: frisket build --toolchain full
 
       - uses: actions/upload-artifact@v7.0.1 
         with: 
