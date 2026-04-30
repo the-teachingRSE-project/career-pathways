@@ -5,7 +5,7 @@
 % Required packages
 % =================
 \usepackage{subcaption}
-
+\usepackage{csquotes}
 \usepackage{orcidlink}
 \usepackage{accsupp}
 
@@ -49,11 +49,12 @@
 
 \author{
 Florian Goth\authorOrcid{0000-0003-2707-4790}\authorRef{2},
-Frank Löffler\authorOrcid{0000-0001-6643-6323}\authorRef{3},
+Frank Löffler\authorOrcid{0000-0001-6643-6323}\authorRef{1}${}^,$\authorRef{3},
 Aaron Reer\authorOrcid{0000-0000-0000-0000}\authorRef{4},
 Julian Dehne\authorOrcid{0000-0001-9265-9619}\authorRef{4},
 } % Authors and references to addresses
 \institute{% Institutes with labels
+\autlabel{1} de-RSE e.V. --- Society for Research Software in Germany\\
 \autlabel{2} Institut für theoretische Physik 1, University of Würzburg, 97074, Würzburg,\\
 \autlabel{3} Heinz Nixdorf Chair for Distributed Information Systems, Jena, Germany\\
 \autlabel{4} GI, Berlin, Germany\\
@@ -88,24 +89,24 @@ abstract
 \maketitle
 
 \section{Introduction}
-The term "Research Software Engineer" has now been around for over 10 years. In the time since it was first "created" back in 2012, we have seen many developments in how people undertaking software engineering are recognised and supported within the research community. However, these advances have largely followed slightly different pathways in different countries. In Germany this has been represented through the creation, growth and formalisation of the deRSE community, representing people building and maintaining research software across a range of roles. In the German research community, particularly within universities, the job title "Research Software Engineer" is still fairly unusual - many of the people developing research software have roles that classify them as researchers or academics.
+The term \enquote{Research Software Engineer} has now been around for over a decade.
+In the time since it was coined back in 2012, we have witnessed many improvements how people undertaking software engineering are recognised and supported within the research community.
+However, these advances seem to follow slightly different pathways in different countries.
+In Germany, changes have been represented through the creation, growth and formalisation of the deRSE community, representing people building and maintaining research software across a range of roles.
+In the German research community, particularly within universities, the job title \enquote{Research Software Engineer} is still fairly unusual---many of even those that primarily develop research software have roles that classify them as researchers or academics.
 
-In this BoF session, we looked at current career structures for RSEs in Germany and also consider international developments in RSE. We then looked at what we, as a community, see as the most important areas where the RSE role can and should be developed in Germany, and how we think career pathways for research software professionals can be improved.
+We report from a BoF session at the deRSE26 conference, where we focussed at current career structures for RSEs in Germany and also consider international developments in RSE\@.
+Starting from this, we distill what we, as a community, see as the most important areas where the RSE role can and should be developed in Germany, and how we think career pathways for research software professionals can be improved.
 
-The key things that we hoped to get out of this BoF session are:
-
+Our intended key results of this BoF session were:
 \begin{itemize}
-
 \item An improved understanding of the challenges RSEs have or the concerns they face around career progression.
-
 \item Community perspectives on suitable career pathways for technical roles.
-
 \item Approaches for engaging with key stakeholders to promote greater awareness and recognition of the importance of supporting technical roles.
 \end{itemize}
 
-We see this development of career pathways for RSEs as a long-term challenge for our community
-and we therefore hope that this will be a session that we can run annually at deRSE.
-By cataloguing this year's fears and hopes we can review progress in the next year and look at how we can catalyse further change.\\
+We see this development of career pathways for RSEs as a long-term challenge for our community and we therefore hope that this topic will be covered annually at deRSE\@.
+By cataloguing this year's fears and hopes we plan to review progress next year and to plan catalysing further change.
 
 \section{Facilitation of the workshop}
 The workshop was performed as part of the program of deRSE26 and around 50 people gathered to share their  insights in
@@ -123,7 +124,7 @@ And in the last round we asked about systemic changes that are required.
 
 \subsection{Toby Hodges: Opportunities for RSEs from the view of the carpentries}
 
-- highlighting that the Carpentries as a group has grown alongside the RSE community. "Shared DNA" between the Carpentries and RSE communities
+- highlighting that the Carpentries as a group has grown alongside the RSE community. \enquote{Shared DNA} between the Carpentries and RSE communities
 - lots of contributors volunteering their time to support each other and helping to develop materials.
 
 What is the view from the Carpentries community on career structures for researchers/academics wanting to pursue a career in software development? Difficult to know where are things are going but there are many opportunities and support for software is an important element of
@@ -147,15 +148,25 @@ Nevertheless, both career paths share the idea of creating better software for b
 
 \subsection{Heidi Seibold: What is wrong with academia, and what you can do outside of academia to improve it}
 
-Overview of career structure, moving from a research career through BA/MA, PhD, Postdoc, Prof, Group Leader but not seeing a strong long-term path - caring about software and open science and wanting to find a way to support the aspects seen as most important through a future career - wanting to improve the quality of research.
-
-    Challenges of the pressure to support open science while being in a role that required meeting the requriements of publishing that many open science and initiatives to advance research assessment are trying to change.
-
-   Reasons to leave academia: Pressure to publish; Open Science as a hobby in conflict with academic career and responsibility duties
-
-   + Freelance 2022 -> Incorporation 2024 (DRA)
-   + Fast growth: 2025 1k learners, 50 trainers, $\approx 3.5$ ppl core team
-
+Heidi opened by laying out the conventional research trajectory she herself had followed:
+From bachelor and master in statistics, a PhD in bio-statistics, postdoc positions to finally leading her own data science research group.
+At this promising position within the standard academic career path however,
+a discrepancy between her passion for improving the quality of research, research software and promoting and supporting Open Science on the one hand,
+and the responsibilities and duties of a group lead on the other hand emerged.
+The pressure to deliver traditional metrics of academic achievement,
+which were also demanded by the responsibility for the career-prospects of young scientists under her supervision,
+clashed with the aspiration to set standards in and promote Open Science practices.
+Realizing the incoherence between a position in the academic system and the ideal of Open Science,
+which also includes a criticism of current academic evaluation and hiring practices,
+helped her to make the decision to leave academia in 2022
+and become a freelancer as trainer and consultant for open and reproducible data science.
+This form of self-employment developed into the formation of the Digital Research Academy (DRA),
+which was incorporated in August 2024.
+DRA has been growing rapidly since then.
+Today it consists of a core-team of 3--4 people, which serves more than 1000 learners and more than 50 trainers.
+Heidi's story is testament for the fact that research can not only be improved from within the academic system,
+and that focused efforts from independent individuals and small companies
+might be quite effective to spread Open Science skills and know-how.
 
 \section{The Fish-bowl discussion}
 
@@ -201,13 +212,13 @@ Here we bring in some of the results from the Mentimeter about the participants.
 We again gathered feedback from the entire audience via mentimeter of what they feel is missing
 and to summarise, we found that the responses cluster around three dominant themes — career path and progression, funding and job security, and recognition — with two additional cross-cutting concerns: organizational role clarity and the need for greater visibility of RSE work.
 
-The most frequently cited need is a clear, structured career path with defined milestones and long-term prospects. This is consistent with the broader literature, where the absence of permanent non-professorial positions in Germany — particularly within the 'Mittelbau' — effectively renders RSE roles career dead ends (Anzt et al., 2020 \cite{Anzt:2020}). The FutuRSI study identifies the lack of attractive career paths and the limited visibility of existing ones as one of five general challenges for research software in Germany (Mannseicher et al., 2025 \cite{Mannseicher:2025a}).
+The most frequently cited need is a clear, structured career path with defined milestones and long-term prospects. This is consistent with the broader literature, where the absence of permanent non-professorial positions in Germany — particularly within the \enquote{Mittelbau} — effectively renders RSE roles career dead ends (Anzt et al., 2020 \cite{Anzt:2020}). The FutuRSI study identifies the lack of attractive career paths and the limited visibility of existing ones as one of five general challenges for research software in Germany (Mannseicher et al., 2025 \cite{Mannseicher:2025a}).
 
-Closely related is the demand for long-term, baseline funding decoupled from short-term project cycles. Respondents repeatedly emphasized job security and institutional continuity as prerequisites for sustained contributions to research software. As Jensen \& Katz (2025 \cite{Jensen:2025c}) observe, traditional funding mechanisms have typically been tied to short-term, PI-led projects, offering RSEs few pathways to sustained employment and professional growth.
+Closely related is the demand for long-term, baseline funding decoupled from short-term project cycles. Respondents repeatedly emphasized job security and institutional continuity as prerequisites for sustained contributions to research software. As Jensen \& Katz (2025 \cite{Jensen:2025c}) observe, traditional funding mechanisms have typically been tied to short-term, PI-led projects, offering RSEs few pathways to sustained employment and professional growth.
 
-A third major theme is recognition — both of RSEs as professionals and of software as a legitimate research output. Respondents called for evaluation metrics beyond publication counts and for a greater understanding of the importance of maintainable software among group leaders. This echoes international findings that insufficient recognition of software contributions remains a systemic barrier to RSE career development (Cohen et al., 2021 \cite{Cohen:2021}). The demand for role models and success stories further underscores the need to increase the visibility of RSE careers, which could help establish the profession as a viable and respected path within academia.
+A third major theme is recognition — both of RSEs as professionals and of software as a legitimate research output. Respondents called for evaluation metrics beyond publication counts and for a greater understanding of the importance of maintainable software among group leaders. This echoes international findings that insufficient recognition of software contributions remains a systemic barrier to RSE career development (Cohen et al., 2021 \cite{Cohen:2021}). The demand for role models and success stories further underscores the need to increase the visibility of RSE careers, which could help establish the profession as a viable and respected path within academia.
 
-Beyond these three dominant themes, respondents highlighted organizational challenges related to role clarity. Calls for a clearer distinction between technical and management responsibilities, clearer collaboration structures, and transparent processes for project assignment reflect the well-documented ambiguity of the RSE role, in which a single person may simultaneously act as user, developer, and project manager (Goth et al., 2025 \cite{Goth:2025}). A recent survey found that 77\% of respondents characterized the role understanding of RSEs as 'unclear and vague' (Druskat \& Theis, 2025 \cite{Druskat:2025a}). Finally, several responses point toward broader policy measures — including a national open science strategy and dedicated development time — as necessary systemic enablers for RSE career development.
+Beyond these three dominant themes, respondents highlighted organizational challenges related to role clarity. Calls for a clearer distinction between technical and management responsibilities, clearer collaboration structures, and transparent processes for project assignment reflect the well-documented ambiguity of the RSE role, in which a single person may simultaneously act as user, developer, and project manager (Goth et al., 2025 \cite{Goth:2025}). A recent survey found that 77\% of respondents characterized the role understanding of RSEs as \enquote{unclear and vague} (Druskat \& Theis, 2025 \cite{Druskat:2025a}). Finally, several responses point toward broader policy measures — including a national open science strategy and dedicated development time — as necessary systemic enablers for RSE career development.
 
 A second question where we performed polling was on the question of how particpants promote RSE within their organisation.
 Here we wanted specifically to collect and share ideas that participants had and via this report spread them also into the wider RSE community.
@@ -271,8 +282,7 @@ and a lack of long-term career perspectives and stability
 hence ecognition mechanisms are widely desired but rarely implemented structurally.
 
 
-RSE should be embedded as a core component of research processes. See chapter 6 of the six of the
-``FutuRSI paving the way``\cite{mannseicher_2025_17672125} paper.
+RSE should be embedded as a core component of research processes. See chapter 6 of the six of the \enquote{FutuRSI paving the way} paper \cite{mannseicher_2025_17672125}.
 Restating this would mean a
 recognition of software as both infrastructure and research output,
 strong integration with HPC and IT services,
@@ -285,7 +295,7 @@ and the nteraction with users is mainly operational (\eg, HPC support).
 This means that RSE is frequently positioned as a service rather than an equal research contribution.
 
 
-Cultural perception plays a critical role in the adoption of RSE.
+Cultural perception plays a critical role in the adoption of RSE\@.
 RSE should be a  valued and integral part of research
 with Positive and attractive positioning
 
@@ -295,30 +305,39 @@ hence ultural acceptance remains a major barrier.
 
 
 The responses point at the deeper reason that there lies  gap lies between active efforts (communication, events, training) and the lack of structural embedding (career paths, recognition, institutional strategy).
-A deeper elaboration of how to move forward is in the FutuRSI white paper \cite{Mannseicher:2025a} here for an stragtegic outlook on the institutionalisation of RSE
+A deeper elaboration of how to move forward is in the FutuRSI white paper \cite{Mannseicher:2025a} here for an stragtegic outlook on the institutionalisation of RSE
 
 
 \subsection{Which systemic, high-level changes are required to enhance your career?}
 
 
-Again, we gathered feedback from the entire audience,
-and found that
-the responses cluster into four interconnected areas: advocacy and lobbying, community building, professionalization, and institutional guidance.
+Again, we gathered feedback from the entire audience, and found that the responses cluster into four interconnected areas: advocacy and lobbying, community building, professionalization, and institutional guidance.
 
-The most prominent theme is advocacy directed at decision-makers. Respondents expect professional societies to lobby funding agencies and institutional leadership for long-term contracts, dedicated RSE funding, and the formal recognition of software as a research output. Several responses call for position papers and policy development targeting specific structural barriers in the German system, such as the Wissenschaftszeitvertragsgesetz (WissZeitVG). This resonates with Anzt et al. (\cite{Anzt:2020}), who emphasize that research institutions and funding agencies should not only be open-minded regarding existing volunteer organizations such as de-RSE e.V., but should actively promote the creation of such groups. The FutuRSI study further underscores that research software must be recognised at all levels as an essential research output, requiring persuasion and advocacy with funding organizations and policymakers, alongside structural adjustments such as institutionalizing RSE development work, adapting recruitment practices, and facilitating career paths through permanent positions (\cite{Mannseicher:2025a}).
+The most prominent theme is advocacy directed at decision-makers.
+Respondents expect professional societies to lobby funding agencies and institutional leadership for long-term contracts, dedicated RSE funding, and the formal recognition of software as a research output.
+Several responses call for position papers and policy development targeting specific structural barriers in the German system, such as the Wissenschaftszeitvertragsgesetz (WissZeitVG).
+This resonates with Anzt et al. \cite{Anzt:2020}, who emphasize that research institutions and funding agencies should not only be open-minded regarding existing volunteer organizations such as de-RSE e.V., but should actively promote the creation of such groups.
+The FutuRSI study further underscores that research software must be recognised at all levels as an essential research output, requiring persuasion and advocacy with funding organizations and policymakers, alongside structural adjustments such as institutionalizing RSE development work, adapting recruitment practices, and facilitating career paths through permanent positions \cite{Mannseicher:2025a}.
 
-A second major theme is community building and networking. Respondents value events, fishbowl discussions, network meetings, and the support of local RSE groups as mechanisms for exchange and mutual learning. This aligns with the emergence of regional RSE communities described by Cohen et al. (\cite{Cohen:2021}), which bridge local and national networks, provide opportunities to learn from different institutional approaches, and support smaller institutions that lack a critical mass of RSEs. Goth et al. (\cite{Goth:2025b}) envision this trajectory continuing, with national RSE communities increasingly collaborating with local partners and regular international conferences amplifying these connections.
+A second major theme is community building and networking.
+Respondents value events, fishbowl discussions, network meetings, and the support of local RSE groups as mechanisms for exchange and mutual learning.
+This aligns with the emergence of regional RSE communities described by Cohen et al. \cite{Cohen:2021}, which bridge local and national networks, provide opportunities to learn from different institutional approaches, and support smaller institutions that lack a critical mass of RSEs.
+Goth et al. \cite{Goth:2025b} envision this trajectory continuing, with national RSE communities increasingly collaborating with local partners and regular international conferences amplifying these connections.
 
-Third, respondents call for professionalization through certification programs, career definitions, and formal study curricula. The desire for a certification that enables career progression — analogous to industry certifications — reflects the broader challenge of defining the RSE role within existing academic structures. Notably, the community has already begun addressing this need: Goth et al. (\cite{Goth:2025}) have defined foundational competencies spanning software engineering, research, and communication skills, providing a framework for training and continuous professional development that organisations could build upon. This work builds the foundation for a joined project of GI and de-RSE, which aims for recommendations for Master-Level Education in Research Software Engineering.
+Third, respondents call for professionalization through certification programs, career definitions, and formal study curricula.
+The desire for a certification that enables career progression — analogous to industry certifications — reflects the broader challenge of defining the RSE role within existing academic structures.
+Notably, the community has already begun addressing this need: Goth et al. \cite{Goth:2025} have defined foundational competencies spanning software engineering, research, and communication skills, providing a framework for training and continuous professional development that organisations could build upon.
+This work builds the foundation for a joined project of GI and de-RSE, which aims for recommendations for Master-Level Education in Research Software Engineering.
 
-Finally, several responses emphasize guidance and mentorship — offering institutions concrete examples of how to establish RSE groups, secure funding, and showcase RSE career paths. This need for coordination is echoed by the German FutuRSI initiative, which calls for a governance structure that consolidates findings, coordinates advocacy, and builds strategic partnerships with universities, research institutions, and funding organizations (\cite{Mannseicher:2025a}).
+Finally, several responses emphasize guidance and mentorship — offering institutions concrete examples of how to establish RSE groups, secure funding, and showcase RSE career paths.
+This need for coordination is echoed by the German FutuRSI initiative, which calls for a governance structure that consolidates findings, coordinates advocacy, and builds strategic partnerships with universities, research institutions, and funding organizations \cite{Mannseicher:2025a}.
 
 Looking beyond the career pathways of RSEs in Germany, we asked participants which particular changes they would like to see implemented in Germany.
 We structured the replies and list them here:\\
 \emph{Recognition and formal education}\\
 \begin{itemize}
- \item Official RSE career path and role definition, combined with an internationally accepted competency/skills framework for RSEs(ideal for an Erasmus Mundus program)
-\item Fellowship and leadership programmes(example: UK leadership programme)
+ \item Official RSE career path and role definition, combined with an internationally accepted competency/skills framework for RSEs (ideal for an Erasmus Mundus program)
+\item Fellowship and leadership programmes (example: UK leadership programme)
 \item Stronger recognition of mid-level academic/technical staff (“Make Mittelbau great again!”)
 \end{itemize}
 \emph{Career}\\
@@ -331,41 +350,37 @@ We structured the replies and list them here:\\
 \begin{itemize}
  \item Dedicated research software funding (development + maintenance)
  \item Small-scale, short-term development grants
- \item Long-term funding instruments (e.g. maintenance funds beyond DFG-backed positions)
+ \item Long-term funding instruments (e.g., maintenance funds beyond DFG-backed positions)
 \end{itemize}
 \emph{Structure (Institutional \& Organizational)}
 \begin{itemize}
- \item National-level institutions for research software (e.g. SSI / eScience center NL-style or US National labs)
+ \item National-level institutions for research software (e.g., SSI / eScience center NL-style or US National labs)
  \item RSE groups embedded across research organizations
  \item Open Source Program Offices (OSPOs)
  \item Professionalized research software services and infrastructure
 \end{itemize}
 
-Our in-person discussion within the fish-bowl also highlights that there are a few aspects that are not
-tied to specific borders but to society in general.
-It was remarked, that society's  perception should change such that
-scientific knowledge is at least as important as "product" generation.
-The research communities assessmant practices should change. In that instance a call to institutions to sign
-the \href{https://www.coara.org/}{Coara Agreement} was voiced.
+Our in-person discussion within the fish-bowl also highlights that there are a few aspects that are not tied to specific borders but to society in general.
+It was remarked, that society's  perception should change such that scientific knowledge is at least as important as \enquote{product} generation.
+The research communities assessmant practices should change.
+In that instance a call to institutions to sign the \href{https://www.coara.org/}{Coara Agreement} was voiced.
 Also there is still a an appreciable gap in the use of software citations.
-It needs to be pushed further with stricter requirements
-for reviewers, funding agencies, and journals.
+It needs to be pushed further with stricter requirements for reviewers, funding agencies, and journals.
 As academic community we should acknowledge, that often research software starts as a side project.
-We should look for ideas, how to integrate the passions into our career,
-and maybe thereby overcome the distinction of either research \emph{OR} RSE.
-As community of RSEs we should acknowledge that we lack a certain amount of high-profile voices
-that can drive our agenda. We should look for young people that now get their Pprofessor positions on the back of research software.
+We should look for ideas, how to integrate the passions into our career, and maybe thereby overcome the distinction of either research \emph{OR} RSE\@.
+As community of RSEs we should acknowledge that we lack a certain amount of high-profile voices that can drive our agenda.
+We should look for young people that now get their Pprofessor positions on the back of research software.
 
 After this discussion we concluded the session.
 
 \section{Summary}
 RSEs consider their tasks as important and really like to perform well in their tasks. But the acceptance of the name and a lack
 of promotion hinders acceptance. Participants feel that the societies could do more to promote RSE in the universities,
-while a general trend reversal to ``Make Mittelbau Great Again!'' is rallied for by the participants.
+while a general trend reversal to \enquote{Make Mittelbau Great Again!} is rallied for by the participants.
 
 \begin{acknowledge}
 We acknowledge the hospitality of the university of Stuttgart for hosting this workshop.
-FG acknowledges funding from the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) through the SFB 1170 “Tocotronics”, project Z03 - project number \geprislink{258499086}.
+FG acknowledges funding from the Deutsche Forschungsgemeinschaft (DFG, German Research Foundation) through the SFB 1170 “Tocotronics”, project Z03, project number \geprislink{258499086}.
 \end{acknowledge}
 
 \begin{aiuse}

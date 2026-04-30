@@ -2,6 +2,13 @@
 *.log
 *.out
 *.xmpdata
-career-pathways.pdf
 *.bbl
 *.bcf
+*.blg
+*.fdb_latexmk
+*.fls
+*.xmpdata
+easst-eps-converted-to.pdf
+pdfa.xmpi
+career-pathways.pdf
+.career-pathways.tex.swp
