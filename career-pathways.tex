@@ -5,7 +5,6 @@
 % Required packages
 % =================
 \usepackage{subcaption}
-\usepackage{csquotes}
 \usepackage{orcidlink}
 \usepackage{accsupp}
 
@@ -14,6 +13,11 @@
 \pdfcompresslevel=1
 %in the article preamble, you can select an equation and copy-paste it to a text file to recover the TeX math
 
+\usepackage{csquotes}
+
+\usepackage[ngerman,british]{babel}
+\newenvironment{de}{\begin{otherlanguage}{ngerman}}{\end{otherlanguage}}
+\newenvironment{en}{\begin{otherlanguage}{british}}{\end{otherlanguage}}
 
 % PDF accessibility and PDF metadata
 \newcommand{\authorRef}[1]{\texorpdfstring{\autref{#1}}{}}
@@ -310,7 +314,7 @@ Again, we gathered feedback from the entire audience, and found that the respons
 
 The most prominent theme is advocacy directed at decision-makers.
 Respondents expect professional societies to lobby funding agencies and institutional leadership for long-term contracts, dedicated RSE funding, and the formal recognition of software as a research output.
-Several responses call for position papers and policy development targeting specific structural barriers in the German system, such as the Wissenschaftszeitvertragsgesetz (WissZeitVG).
+Several responses call for position papers and policy development targeting specific structural barriers in the German system, such as the \begin{de}Wissenschaftszeitvertragsgesetz\end{de} or the \begin{de}Teilzeit- und Befristungsgesetz\end{de} angewandt auf third-party funded projects.
 This resonates with Anzt et al. \cite{Anzt:2020}, who emphasize that research institutions and funding agencies should not only be open-minded regarding existing volunteer organizations such as de-RSE e.V., but should actively promote the creation of such groups.
 The FutuRSI study further underscores that research software must be recognised at all levels as an essential research output, requiring persuasion and advocacy with funding organizations and policymakers, alongside structural adjustments such as institutionalizing RSE development work, adapting recruitment practices, and facilitating career paths through permanent positions \cite{Mannseicher:2025a}.
 
