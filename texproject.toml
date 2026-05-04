@@ -12,6 +12,7 @@ custom_toolchain = "T"
 [dependencies]
 accsupp = "texlive"
 axessibility = "texlive"
+babel = "texlive"
 caption = "texlive"
 colorprofiles = "texlive"
 csquotes = "texlive"
