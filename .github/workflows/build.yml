@@ -26,18 +26,18 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install system packages
-        run: sudo apt-get install ghostscript 
+        run: sudo apt-get install ghostscript
   
       - uses: actions/cache@v4
         with:
           path: | 
-            /home/runner/.cargo/bin/
+            /home/runner/.cargo/
             .texenv
           key: frisket-${{hashFiles('texproject.toml')}}
 
       - name: Install and setup frisket
         run: |
-          cargo install --git https://www.github.com/frisket-tool/frisket
+          cargo install --git https://www.github.com/frisket-tool/frisket &> /dev/null || true
           frisket setup
           frisket install 2026
 
