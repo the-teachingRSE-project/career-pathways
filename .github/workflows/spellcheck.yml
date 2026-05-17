@@ -5,10 +5,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Install packages
-        run: sudo apt install -y aspell aspell-en
+        run: sudo apt install -y locales locales-all aspell aspell-en
       - name: Set up Git repository
         uses: actions/checkout@v4
       - name: run spellchecker
         run: |
+          locale-gen en_GB en_GB.UTF-8
           # run spell checker on file
           bash spellcheck.sh career-pathways.tex
