@@ -13,3 +13,5 @@ pdfa.xmpi
 career-pathways.pdf
 .career-pathways.tex.swp
 .texenv
+*~
+.misspelled_words.txt
