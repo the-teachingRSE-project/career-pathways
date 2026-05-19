@@ -512,9 +512,19 @@ FUNCTION {output.note.doi.url}
   if$
   url empty$
     'skip$
-    { "\\\url{" url * "}" *
-      write$
-      newline$ }
+    { doi empty$
+      { "\\\url{" url * "}" *
+        write$
+        newline$ }
+      { url "https://doi.org/" doi * =
+        'skip$
+        { "\\\url{" url * "}" *
+          write$
+          newline$ }
+        if$
+      }
+      if$
+    }
   if$ }
 
 % Entry Type Functions
